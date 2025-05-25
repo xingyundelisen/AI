@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from 'react'
+import { useEffect, useRef, useState } from 'react'
 import Navbar from './navbar'
 import { Link, useLocation } from 'react-router-dom'
 import ResponsiveNavbar from './offcanvasNavbar'
@@ -84,10 +84,16 @@ const Header = () => {
                                     </button>
                                 </div>
                                 {
-                                    pathName !== '/home-three' &&
-                                    <div className="option-item">
-                                        <Link to="/contact" className="default-btn"><span>Get Started</span> <i className="bx bx-chevron-right" /></Link>
-                                    </div>
+                                    pathName !== '/home-three' && (
+                                        <>
+                                            <div className="option-item">
+                                                <Link to="/login" className="default-btn"><span>Login</span></Link>
+                                            </div>
+                                            <div className="option-item">
+                                                <Link to="/login" className="default-btn"><span>Register</span></Link>
+                                            </div>
+                                        </>
+                                    )
                                 }
                             </div>
                         </div>

@@ -9,7 +9,7 @@ const HeroOne = () => {
           <div className="col-lg-12">
             <div className="hero-content-2">
               <div className="sub-title-2" data-animation="fade-zoom-in" data-delay={0.4}>
-                <p>Global item</p>
+                <p>Global AI Marketplace</p>
               </div>
               <h2>
                 <span data-animation="fade-up">Discover, Trade & Deploy</span>
